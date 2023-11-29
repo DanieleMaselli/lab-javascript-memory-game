@@ -34,6 +34,10 @@ body {
   transform: rotateY(180deg);
 }
 
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
 .card .back,
 .card .front {
   width: 71px;

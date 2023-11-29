@@ -40,10 +40,18 @@ window.addEventListener('load', (event) => {
 
   // Add all the divs to the HTML
   document.querySelector('#memory-board').innerHTML = html;
+ //const front = document.querySelector('.front');
+  //const back = document.querySelector('.back');
 
   // Bind the click event of each element to a function
   document.querySelectorAll('.card').forEach((card) => {
-    card.addEventListener('click', () => {
+    card.addEventListener('click', (event) => {
+      
+      card.classList.toggle('turned');
+
+
+      
+      
       // TODO: write some code here
       console.log(`Card clicked: ${card}`);
     });
